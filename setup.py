@@ -1,11 +1,11 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="hf_utils",
     version="0.0.1",
     description="huggingface_hub utils",
     author="ddPn08",
-    packages=find_packages(),
+    packages=["hf_utils", "hf_utils.commands"],
     install_requires=[
         "huggingface_hub",
         "fire",
